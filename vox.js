@@ -17,6 +17,8 @@ function setup() {
       mic.start();
 
 
+  function mousePressed() {
+     getAudioContext().resume();
 
    {
   slider1 = createSlider(10, 255, 100);
@@ -50,9 +52,7 @@ function draw() {
      
   }
 
-  function mousePressed() {
-     getAudioContext().resume();
-    if(state == 0 && mic.enabled) {
+   
   var vol = mic.getLevel();
     }
   let  val1 = slider1.value()+vol*200;
