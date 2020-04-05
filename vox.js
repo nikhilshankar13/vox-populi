@@ -11,6 +11,9 @@ function setup() {
   
     getAudioContext().suspend();
   
+  function mousePressed() {
+  userStartAudio();
+  
    mic = new p5.AudioIn();
       mic.start();
 
@@ -43,8 +46,7 @@ function setup() {
 function draw() {
   
 
-function mousePressed() {
-  userStartAudio();
+
 
      
   }
