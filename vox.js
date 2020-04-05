@@ -9,12 +9,11 @@ function setup() {
   createCanvas(1920, 1080);
    background(255);
   
-    getAudioContext().suspend();
-  
-  function mousePressed() {
-  userStartAudio();
+   
+ 
   
    mic = new p5.AudioIn();
+   
       mic.start();
 
 
@@ -51,7 +50,11 @@ function draw() {
      
   }
 
+  function mousePressed() {
+     getAudioContext().resume();
+    if(state == 0 && mic.enabled) {
   var vol = mic.getLevel();
+    }
   let  val1 = slider1.value()+vol*200;
     let val2 = slider2.value()+vol*200;
     let val3 = slider3.value()+vol*200;
