@@ -49,12 +49,10 @@ function draw() {
 
 
 
-     
-  }
 
    
   var vol = mic.getLevel();
-    }
+    
   let  val1 = slider1.value()+vol*200;
     let val2 = slider2.value()+vol*200;
     let val3 = slider3.value()+vol*200;
