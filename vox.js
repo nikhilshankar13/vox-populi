@@ -8,9 +8,9 @@ let slider4;
 function setup() {
   createCanvas(1920, 1080);
    background(0);
+  
+    getAudioContext().suspend();
 
-  mic = new p5.AudioIn();
-  mic.start();
 
 
    {
@@ -31,13 +31,20 @@ function setup() {
     slider4.style('width', '100px');
   }
 
+  function mousePressed() {
+  userStartAudio();
 
-
+      mic = new p5.AudioIn();
+      mic.start();
+  }
 
 
 }
 
+
 function draw() {
+  
+
 
 
   var vol = mic.getLevel();
