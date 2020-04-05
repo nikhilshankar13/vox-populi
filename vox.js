@@ -34,11 +34,7 @@ function setup() {
     slider4.style('width', '100px');
   }
 
-  function mousePressed() {
-  userStartAudio();
-
-     
-  }
+  
 
 
 }
@@ -47,7 +43,11 @@ function setup() {
 function draw() {
   
 
+function mousePressed() {
+  userStartAudio();
 
+     
+  }
 
   var vol = mic.getLevel();
   let  val1 = slider1.value()+vol*200;
