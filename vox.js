@@ -24,7 +24,7 @@ function setup() {
    {
    slider3 = createSlider(10, 255, 100);
    slider3.position(10, 300);
-   slider3.style('width', '100px');} */
+   slider3.style('width', '100px');} 
   {
     slider4 = createSlider(1, 5, 100);
     slider4.position(10, 500);
