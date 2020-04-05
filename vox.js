@@ -7,7 +7,7 @@ let slider4;
 
 function setup() {
   createCanvas(1920, 1080);
-   background(0);
+   background(255);
   
     getAudioContext().suspend();
 
